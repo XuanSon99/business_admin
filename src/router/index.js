@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/buy'
+  },
+  {
     path: '/:id',
     component: () => import('../views/BuyOrder.vue'),
     meta: {
